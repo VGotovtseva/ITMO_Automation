@@ -55,6 +55,7 @@ def type_number(b: int) -> str:
     else:
         print("+")
 
+
 type_number(100)
 
 

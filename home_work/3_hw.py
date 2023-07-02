@@ -7,14 +7,16 @@ def task_one(a: int, b: int) -> int:
 
 print(task_one(5, 28))
 
+
 def task_two(c: int, d: int):
-    if (c > d and abs(c - d) == 135) or (d > c and abs(d - c) == 135):
+    if abs(c - d) == 135:
         print("yes")
     else:
         print("no")
 
 
-task_two(0, -135)
+task_two(140, 5)
+
 
 def task_three(month_number: int):
     if month_number in (1, 2, 12):
@@ -39,7 +41,7 @@ def task_four(e: int, f: int, j: int):
         print("no")
 
 
-task_four(11, -2, 14)
+task_four(11, -10, 14)
 
 
 def task_five(list1: list) -> int:
@@ -50,7 +52,7 @@ def task_five(list1: list) -> int:
     return summa
 
 
-print(task_five([1, 2, -1, 3, 0]))
+print(task_five([22, 3, -1, 9, 0]))
 
 
 def task_six(years: int, month: int):
