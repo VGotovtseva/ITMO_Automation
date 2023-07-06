@@ -1,37 +1,43 @@
-class Input:
-
-    def __init__(self, loc, text):
-        self.loc = loc
-        self.text = text
-
-search = Input('произвольное значение', 'Поиск')
-
-class Button:
-
-    def __init__(self, loc, text):
-        self.loc = loc
-        self.text = text
-
-search_two = Button('произвольное значение 2', 'Поиск 2')
-
-class Title:
-
-    def __init__(self, loc, text):
-        self.loc = loc
-        self.text = text
-
-search_three = Title('произвольное значение 3', 'Поиск 3')
-
-class Link:
-
-    def __init__(self, loc, text):
-        self.loc = loc
-        self.text = text
-
-search_four = Link('произвольное значение 4', 'Поиск 4')
+from task_9_checks import Checks
 
 
-print(search.loc, search.text)
-print(search_two.loc, search_two.text)
-print(search_three.loc, search_three.text)
-print(search_four.loc, search_four.text)
+class Input(Checks):
+
+    def __init__(self, loc):
+        super().__init__(loc)
+
+
+search = Input('произвольное значение')
+print(search.check_text())
+
+class Button(Checks):
+
+    def __init__(self, loc):
+        super().__init__(loc)
+
+
+search_two = Button('произвольное значение 2')
+print(search_two.check_text())
+
+
+class Title(Checks):
+
+    def __init__(self, loc):
+        super().__init__(loc)
+
+
+search_three = Title('произвольное значение 3')
+print(search_three.check_text())
+
+
+class Link(Checks):
+
+    def __init__(self, loc):
+        super().__init__(loc)
+
+
+search_four = Link('произвольное значение 4')
+print(search_four.check_text())
+
+
+
