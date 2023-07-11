@@ -13,8 +13,7 @@ def test_site_visit():
     except NoSuchElementException:
         assert False
     assert True
-        print("Элементы найдены")
 
-
+    print("Элементы найдены")
 
 
