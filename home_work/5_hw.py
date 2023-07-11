@@ -13,8 +13,8 @@ def test_site_visit():
     except NoSuchElementException:
         assert False
     assert True
-
-    if username != "" and password != "" and login_button != "":
         print("Элементы найдены")
+
+
 
 
